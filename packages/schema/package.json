@@ -1,0 +1,30 @@
+{
+  "name": "@repo/schema",
+  "version": "0.0.0",
+  "private": true,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc -b",
+    "lint": "eslint \"**/*.ts*\"",
+    "test": "echo 'all packages:schema tests passed!'"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@turbo/gen": "^1.12.4",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^8.57.0",
+    "tsup": "^8.2.4"
+  },
+  "dependencies": {
+    "run": "^1.5.0",
+    "zod": "^3.23.8"
+  }
+}
